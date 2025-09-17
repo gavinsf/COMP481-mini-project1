@@ -2,7 +2,7 @@
 
 ## Contributions
 ### Gavin
-filter.hs file
+Filter.hs file
 
 ### Aziz
-transactions.hs file
+Transactions.hs file
