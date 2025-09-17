@@ -1,7 +1,10 @@
 module Main where
 
 import Transactions
+import Filter
 
 main :: IO ()
 main = do
-     putStrLn "Hello"
+     let output = filterByCategory "Food" sampleTransactions
+     print output
+     
