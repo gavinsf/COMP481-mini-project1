@@ -1,4 +1,5 @@
-module Filter (filterByCategory, filterByMinAmount, filterByYear) where
+module Filter (filterByCategory, filterByMinAmount, filterByYear,
+               filterByMonth) where
 
 import Transactions (Transaction(..))
 
@@ -11,4 +12,7 @@ filterByMinAmount :: Double -> [Transaction] -> [Transaction]
 filterByMinAmount minAmount = filter (\ transaction -> tAmount transaction >= minAmount)
 
 filterByYear :: String -> [Transaction] -> [Transaction]
-filterByYear year = filter (\ transaction -> take 4 (tDate transaction) == year) 
+filterByYear year = filter (\ transaction -> take 4 (tDate transaction) == year)
+
+filterByMonth :: String -> [Transaction] -> [Transaction]
+filterByMonth month = filter (\ transaction -> take 2 (drop 5 (tDate transaction)) == month)
