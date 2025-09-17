@@ -1,6 +1,6 @@
 {-# LANGUAGE RecordWildCards #-}
 
-module Transactions (sampleTransactions) where
+module Transactions (sampleTransactions, Transaction(..)) where
 
 import Data.Function (on)
 
