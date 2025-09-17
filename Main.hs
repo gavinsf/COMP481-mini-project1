@@ -5,6 +5,5 @@ import Filter
 
 main :: IO ()
 main = do
-     let output = filterByCategory "Food" sampleTransactions
-     print output
-     
+    let output = filterByCategory "Food" sampleTransactions
+    putStrLn (formatTransactions output)
