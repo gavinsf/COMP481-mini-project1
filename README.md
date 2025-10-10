@@ -1,4 +1,6 @@
-# COMP481-mini-project1
+# Functional-Transaction-Analyzer
+
+## Mini-project 1 for COMP481
 
 ## Contributions
 ### Gavin
